@@ -7,12 +7,12 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import Update
 from aiohttp import web
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8653820267:AAG4C30chDit9mdeg59CvPvNr49olVz20j4")
 BASE_URL = os.getenv("RENDER_EXTERNAL_URL") 
 
 # === НАЛАШТУВАННЯ META CAPI ===
 PIXEL_ID = os.getenv("META_PIXEL_ID", "1397593445686318")
-CAPI_ACCESS_TOKEN = os.getenv("META_CAPI_TOKEN", "")  # Вставте ваш токен сюди або додайте в Environment Variables на Render
+CAPI_ACCESS_TOKEN = os.getenv("META_CAPI_TOKEN", "EAAQSqWN61uABS2bZACQNFuZB8HRBXMfQNS0hJCozUZCte7r1SZA52PyqCNJzQRJJs2YAUqMDcLEKJfFOKc7MVg5Jb3u9tFzkvYsoSxYou6VJOdXrY0tGeleFJEZBZBZBbv6NuZCl5UpIwhSPRWKIvaDC89uVs27jTpZBv1AWupjCngDAWNfT9EnqCkl7C8fnl9ZCZA8hgZDZD")  
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
